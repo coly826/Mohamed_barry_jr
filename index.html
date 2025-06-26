@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Barry JR - Vente de Produits</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Barry JR - Boutique de produits variés à Thiès. Commandez facilement par WhatsApp." />
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #fdfaf6;
+      color: #5a4022;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding-top: 70px; /* espace pour navbar fixe */
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #7a6235;
+    }
+
+    .navbar-brand, 
+    .nav-link {
+      color: #fff !important;
+      font-weight: bold;
+    }
+
+    .navbar-brand:hover,
+    .nav-link:hover {
+      color: #f2e5c7 !important;
+    }
+
+    /* Logo */
+    .logo {
+      display: block;
+      margin: 20px auto 30px;
+      width: 200px;
+      height: auto;
+    }
+
+    /* Titres */
+    h1 {
+      text-align: center;
+      color: #7a6235;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    /* Produits */
+    .product-img {
+      width: 100%;
+      height: 200px;
+      
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #7a6235;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(122, 98, 53, 0.4);
+    }
+
+    .product {
+      margin-bottom: 30px;
+    }
+
+    /* Section contact */
+    #contact h2 {
+      color: #7a6235;
+      margin-bottom: 30px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #7a6235;
+      color: #fff;
+      padding: 20px;
+      margin-top: 40px;
+
+      /* Flex to center content */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+    }
+    .btn-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <a href="https://wa.me/221764925486" class="btn-whatsapp" target="_blank" title="Commander sur WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="bi bi-shop-window me-2"></i>Barry JR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-house-door me-1"></i>Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#produit"><i class="bi bi-box-seam me-1"></i>Produits</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-telephone me-1"></i>Contact
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+              <li>
+                <a class="dropdown-item" href="https://wa.me/221764925486" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-whatsapp me-2"></i>221764925486 
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="mailto:barrymouhameh@gmail.com">
+                  <i class="bi bi-envelope me-2"></i>barrymouhameh@gmail.com
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="bi bi-geo-alt me-2"></i>Thies
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Logo -->
+  <img src="images/Beige Retro Tailor Scissors Logo (1).png" alt="Logo Barry JR" class="logo" />
+  
+
+  <!-- Titre -->
+  <h1>Barry.JR Le Businessman</h1>
+  <!-- Section À propos -->
+  <section id="a-propos" class="container mt-4 mb-5">
+    <h2 class="text-center" style="color:#7a6235;">
+      <i class="bi bi-info-circle-fill me-2"></i>À propos de Barry.JR
+    </h2>
+    <p class="mt-3" style="text-align: justify; font-size: 1.05rem; color:#5a4022;">
+      Barry JR, basé à Thiès, propose des matelas, coussins de qualité, durables et accessibles. L'entreprise assure un service client réactif
+       et une commande facile via WhatsApp, avec livraison à Thiès et dans les environs. <br>
+       <i class="bi bi-whatsapp me-2"></i>
+       <a href="https://wa.me/221764925486" target="_blank" rel="noopener noreferrer" style="color:#5a4022;">+221 76 492 54 86</a>
+&ensp;
+       <i class="bi bi-telephone me-2"></i>
+          <a href="tel:+221786874267" style="color:#5a4022;">+221 78 687 42 67</a>  <i class="bi bi-geo-alt me-2"></i>
+          Thiès, Sénégal
+    </p>
+  
+    <div class="row justify-content-center mt-4">
+      
+      
+      
+      
+    </div>
+  </section>
+  
+
+
+  <!-- Grille de produits -->
+  <main id="produit" class="container mt-4" aria-label="Liste des produits">
+    <div class="row">
+      <!-- Produit 2 -->
+      <article class="col-6 col-md-3 product">
+        <a href="https://wa.me/221764925486?text=Bonjour,%20je%20suis%20intéressé%20par%20le%20produit%202" target="_blank" rel="noopener noreferrer" aria-label="Produit 2 - cliquer pour commander sur WhatsApp">
+          <img src="images/a2.jpg" alt="Produit 2 - Chaîne en or" class="product-img" />
+        </a>
+      </article>
+
+      <!-- Produit 3 -->
+      <article class="col-6 col-md-3 product">
+        <a href="https://wa.me/221764925486?text=Bonjour,%20je%20veux%20le%20produit%203" target="_blank" rel="noopener noreferrer" aria-label="Produit 3 - cliquer pour commander sur WhatsApp">
+          <img src="images/a3.jpg" alt="Produit 3 - Montre élégante" class="product-img" />
+        </a>
+      </article>
+
+      <!-- Produit 4 -->
+      <article class="col-6 col-md-3 product">
+        <a href="https://wa.me/221764925486?text=Bonjour,%20je%20veux%20le%20produit%204" target="_blank" rel="noopener noreferrer" aria-label="Produit 4 - cliquer pour commander sur WhatsApp">
+          <img src="images/a4.jpg" alt="Produit 4 - Bracelet en cuir" class="product-img" />
+        </a>
+      </article>
+
+      <!-- Produit 5 -->
+      <article class="col-6 col-md-3 product">
+        <a href="https://wa.me/221764925486?text=Je%20souhaite%20acheter%20le%20produit%205" target="_blank" rel="noopener noreferrer" aria-label="Produit 5 - cliquer pour commander sur WhatsApp">
+          <img src="images/a5.jpg" alt="Produit 5 - Parfum" class="product-img" />
+        </a>
+      </article>
+
+      <!-- Produit 14 -->
+      <article class="col-6 col-md-3 product">
+        <a href="https://wa.me/221764925486?text=Je%20souhaite%20acheter%20le%20produit%2014" target="_blank" rel="noopener noreferrer" aria-label="Produit 14 - cliquer pour commander sur WhatsApp">
+          <img src="images/a14.jpg" alt="Produit 14 - Sac à main" class="product-img" />
+        </a>
+      </article>
+
+      <article class="col-6 col-md-3 product">
+        <a href="https://wa.me/221764925486?text=Je%20souhaite%20acheter%20le%20produit%2014" target="_blank" rel="noopener noreferrer" aria-label="Produit 14 - cliquer pour commander sur WhatsApp">
+          <img src="images/a6.jpg" alt="Produit 14 - Sac à main" class="product-img" />
+        </a>
+      </article>
+
+      <article class="col-6 col-md-3 product">
+        <a href="https://wa.me/221764925486?text=Je%20souhaite%20acheter%20le%20produit%2014" target="_blank" rel="noopener noreferrer" aria-label="Produit 14 - cliquer pour commander sur WhatsApp">
+          <img src="images/a7.jpg" alt="Produit 14 - Sac à main" class="product-img" />
+        </a>
+      </article>
+
+      <article class="col-6 col-md-3 product">
+        <a href="https://wa.me/221764925486?text=Je%20souhaite%20acheter%20le%20produit%2014" target="_blank" rel="noopener noreferrer" aria-label="Produit 14 - cliquer pour commander sur WhatsApp">
+          <img src="images/a8.jpg" alt="Produit 14 - Sac à main" class="product-img" />
+        </a>
+      </article>
+
+      <article class="col-6 col-md-3 product">
+        <a href="https://wa.me/221764925486?text=Je%20souhaite%20acheter%20le%20produit%2014" target="_blank" rel="noopener noreferrer" aria-label="Produit 14 - cliquer pour commander sur WhatsApp">
+          <img src="images/a9.jpg" alt="Produit 14 - Sac à main" class="product-img" />
+        </a>
+      </article>
+
+      <article class="col-6 col-md-3 product">
+        <a href="https://wa.me/221764925486?text=Je%20souhaite%20acheter%20le%20produit%2014" target="_blank" rel="noopener noreferrer" aria-label="Produit 14 - cliquer pour commander sur WhatsApp">
+          <img src="images/a10.jpg" alt="Produit 14 - Sac à main" class="product-img" />
+        </a>
+      </article>
+
+      <article class="col-6 col-md-3 product">
+        <a href="https://wa.me/221764925486?text=Je%20souhaite%20acheter%20le%20produit%2014" target="_blank" rel="noopener noreferrer" aria-label="Produit 14 - cliquer pour commander sur WhatsApp">
+          <img src="images/a12.jpg" alt="Produit 14 - Sac à main" class="product-img" />
+        </a>
+      </article>
+
+      <article class="col-6 col-md-3 product">
+        <a href="https://wa.me/221764925486?text=Je%20souhaite%20acheter%20le%20produit%2014" target="_blank" rel="noopener noreferrer" aria-label="Produit 14 - cliquer pour commander sur WhatsApp">
+          <img src="images/a13.jpg" alt="Produit 14 - Sac à main" class="product-img" />
+        </a>
+      </article>
+
+      <article class="col-6 col-md-3 product ">
+        <a href="https://wa.me/221764925486?text=Je%20souhaite%20acheter%20le%20produit%2014" target="_blank" rel="noopener noreferrer" aria-label="Produit 14 - cliquer pour commander sur WhatsApp">
+          <img src="images/a13.jpg" alt="Produit 14 - Sac à main" class="product-img" />
+        </a>
+      </article>
+      <article class="col-6 col-md-3 product">
+        <a href="https://wa.me/221764925486?text=Bonjour,%20je%20suis%20intéressé%20par%20le%20produit%202" target="_blank" rel="noopener noreferrer" aria-label="Produit 2 - cliquer pour commander sur WhatsApp">
+          <img src="images/a2.jpg" alt="Produit 2 - Chaîne en or" class="product-img" />
+        </a>
+      </article>
+
+      <!-- Produit 3 -->
+      <article class="col-6 col-md-3 product">
+        <a href="https://wa.me/221764925486?text=Bonjour,%20je%20veux%20le%20produit%203" target="_blank" rel="noopener noreferrer" aria-label="Produit 3 - cliquer pour commander sur WhatsApp">
+          <img src="images/a3.jpg" alt="Produit 3 - Montre élégante" class="product-img" />
+        </a>
+      </article>
+
+      <!-- Produit 4 -->
+      <article class="col-6 col-md-3 product">
+        <a href="https://wa.me/221764925486?text=Bonjour,%20je%20veux%20le%20produit%204" target="_blank" rel="noopener noreferrer" aria-label="Produit 4 - cliquer pour commander sur WhatsApp">
+          <img src="images/a4.jpg" alt="Produit 4 - Bracelet en cuir" class="product-img" />
+        </a>
+      </article>
+    </div>
+  </main>
+
+  <!-- Section Contact -->
+  <section id="contact" class="container mt-5 mb-4" aria-label="Contact">
+    <h2 class="text-center mb-4"><i class="bi bi-telephone-fill me-2"></i>Contactez-nous</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4 text-center mb-3">
+        <p>
+          <i class="bi bi-whatsapp me-2"></i><strong> </strong>
+          <a href="https://wa.me/221764925486" target="_blank" rel="noopener noreferrer" style="color:#5a4022;">+221 77 123 45 67</a>
+        </p>
+      </div>
+      
+      <div class="col-md-4 text-center mb-3">
+        <p>
+          <i class="bi bi-telephone me-2"></i><strong> </strong>
+          <a href="tel:+221786874267" style="color:#5a4022;">+221 78 687 42 67</a>
+        </p>
+      </div>
+      
+      <div class="col-md-4 text-center mb-3">
+        <p><i class="bi bi-envelope me-2"></i><strong></strong>
+          <a href="mailto:barrymouhameh@gmail.com" style="color:#5a4022;">barrymouhameh@gmail.com</a>
+        </p>
+      </div>
+      <div class="col-md-4 text-center mb-3">
+        <p><i class="bi bi-geo-alt me-2"></i><strong></strong>Thiès, Sénégal</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <i class="bi bi-c-circle me-1" aria-hidden="true"></i><span>2025 Barry JR - Tous droits réservés</span> |
+   <i class="bi bi-telephone me-2"></i> </i><span>+221 78 687 42 67</span>
+  </footer>
+
+  <!-- Bootstrap JS Bundle (navbar responsive) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script pour fermer menu navbar sur clic lien (mobile) -->
+  <script>
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const navMenu = document.getElementById('navMenu');
+        if (navMenu.classList.contains('show')) {
+          new bootstrap.Collapse(navMenu).hide();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
